@@ -1,0 +1,6 @@
+<p><strong>Solution:</strong></p><pre class="narendra">with&nbsp;open('Narendra.txt','r')&nbsp;as&nbsp;file:
+&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;=&nbsp;file.readlines()
+
+text&nbsp;=&nbsp;[line.replace('\n',&nbsp;'')&nbsp;for&nbsp;line&nbsp;in&nbsp;text]
+text&nbsp;=&nbsp;[line&nbsp;for&nbsp;line&nbsp;in&nbsp;text&nbsp;if&nbsp;len(line)&nbsp;&gt;&nbsp;0]
+print(text)</pre>

@@ -1,0 +1,12 @@
+<pre class="narendra">def calculate(number):
+    i = 2
+    factors = []
+    while i * i &lt;= number:
+        if not number % i == 0:
+            i += 1
+        else:
+            number = number // i
+            factors.append(i)
+    if number &gt; 1:
+        factors.append(number)
+    return factors</pre>

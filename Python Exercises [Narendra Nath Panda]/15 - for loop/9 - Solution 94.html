@@ -1,0 +1,12 @@
+<p><strong>Solution:</strong></p><pre class="narendra">text&nbsp;=&nbsp;"""Python&nbsp;is&nbsp;powerful...&nbsp;and&nbsp;fast
+plays&nbsp;well&nbsp;with&nbsp;others
+runs&nbsp;everywhere
+is&nbsp;friendly&nbsp;&amp;&nbsp;easy&nbsp;to&nbsp;learn
+is&nbsp;Open
+These&nbsp;are&nbsp;some&nbsp;of&nbsp;the&nbsp;reasons&nbsp;people&nbsp;who&nbsp;use&nbsp;Python&nbsp;would&nbsp;rather&nbsp;not&nbsp;use&nbsp;anything&nbsp;else"""
+
+words&nbsp;=&nbsp;text.split()
+words&nbsp;=&nbsp;[word.lower()&nbsp;for&nbsp;word&nbsp;in&nbsp;words]
+words&nbsp;=&nbsp;[word.replace('.',&nbsp;'').replace(',',&nbsp;'')&nbsp;for&nbsp;word&nbsp;in&nbsp;words]
+words&nbsp;=&nbsp;[word&nbsp;for&nbsp;word&nbsp;in&nbsp;words&nbsp;if&nbsp;len(word)&nbsp;&gt;&nbsp;6]
+print(words)</pre>

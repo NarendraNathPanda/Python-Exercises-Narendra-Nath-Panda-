@@ -1,0 +1,15 @@
+<p><strong>Solution:</strong></p><pre class="narendra">max_iters&nbsp;=&nbsp;10000&nbsp;
+iters&nbsp;=&nbsp;0
+w_0&nbsp;=&nbsp;-1
+previous_step_size&nbsp;=&nbsp;1
+learning_rate&nbsp;=&nbsp;0.01
+precision&nbsp;=&nbsp;0.000001
+derivative&nbsp;=&nbsp;lambda&nbsp;w:&nbsp;2&nbsp;*&nbsp;w&nbsp;-&nbsp;4
+
+while&nbsp;previous_step_size&nbsp;&gt;&nbsp;precision&nbsp;and&nbsp;iters&nbsp;&lt;&nbsp;max_iters:
+&nbsp;&nbsp;&nbsp;&nbsp;w_prev&nbsp;=&nbsp;w_0
+&nbsp;&nbsp;&nbsp;&nbsp;w_0&nbsp;=&nbsp;w_prev&nbsp;-&nbsp;learning_rate&nbsp;*&nbsp;derivative(w_prev)
+&nbsp;&nbsp;&nbsp;&nbsp;previous_step_size&nbsp;=&nbsp;abs(w_0&nbsp;-&nbsp;w_prev)
+&nbsp;&nbsp;&nbsp;&nbsp;iters&nbsp;+=&nbsp;1
+
+print(f'A&nbsp;local&nbsp;minimum&nbsp;in&nbsp;point:&nbsp;{w_0:.2f}')</pre>

@@ -1,0 +1,7 @@
+<p><strong>Solution:</strong></p><pre class="narendra">headers&nbsp;=&nbsp;['user_id',&nbsp;'amount']
+users&nbsp;=&nbsp;[['001',&nbsp;'1400'],&nbsp;['004',&nbsp;'1300'],&nbsp;['007',&nbsp;'900']]
+
+with&nbsp;open('users.csv',&nbsp;'w')&nbsp;as&nbsp;file:
+&nbsp;&nbsp;&nbsp;&nbsp;file.write(','.join(headers)&nbsp;+&nbsp;'\n')
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;user&nbsp;in&nbsp;users:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file.write(','.join(user)&nbsp;+&nbsp;'\n')</pre>

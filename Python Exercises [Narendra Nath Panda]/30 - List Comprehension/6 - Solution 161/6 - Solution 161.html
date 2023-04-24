@@ -1,0 +1,9 @@
+<p><strong>Solution:</strong></p><pre class="narendra">with&nbsp;open('Narendra.txt',&nbsp;'r')&nbsp;as&nbsp;file:
+&nbsp;&nbsp;&nbsp;&nbsp;lines&nbsp;=&nbsp;file.read()
+
+lines&nbsp;=&nbsp;lines.lower()
+lines&nbsp;=&nbsp;lines.replace(',',&nbsp;'').replace('.',&nbsp;'')
+tokens&nbsp;=&nbsp;lines.split()
+tokens&nbsp;=&nbsp;[token&nbsp;for&nbsp;token&nbsp;in&nbsp;tokens&nbsp;if&nbsp;len(token)&nbsp;&gt;&nbsp;7]
+tokens.sort()
+print(tokens)</pre>

@@ -1,0 +1,11 @@
+<p><strong>Solution:</strong></p><pre class="narendra">y_true&nbsp;=&nbsp;[0,&nbsp;0,&nbsp;1,&nbsp;1,&nbsp;0,&nbsp;1,&nbsp;0]
+y_pred&nbsp;=&nbsp;[0,&nbsp;0,&nbsp;1,&nbsp;0,&nbsp;0,&nbsp;1,&nbsp;0]
+
+def&nbsp;accuracy(y_true,&nbsp;y_pred):
+&nbsp;&nbsp;&nbsp;&nbsp;counter&nbsp;=&nbsp;0
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;i,&nbsp;j&nbsp;in&nbsp;zip(y_true,&nbsp;y_pred):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;i&nbsp;==&nbsp;j:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter&nbsp;+=&nbsp;1
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;round(counter&nbsp;/&nbsp;len(y_true),&nbsp;4)
+
+print(accuracy(y_true,&nbsp;y_pred))</pre>

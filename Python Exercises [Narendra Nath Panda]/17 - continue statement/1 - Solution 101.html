@@ -1,0 +1,14 @@
+<p><strong>Solution:</strong></p><pre class="narendra">gaming&nbsp;=&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;'11B':&nbsp;[362.5,&nbsp;'PLN'],
+&nbsp;&nbsp;&nbsp;&nbsp;'CDR':&nbsp;[74.25,&nbsp;'USD'],
+&nbsp;&nbsp;&nbsp;&nbsp;'CIG':&nbsp;[0.85,&nbsp;'PLN'],
+&nbsp;&nbsp;&nbsp;&nbsp;'PLW':&nbsp;[79.5,&nbsp;'USD'],
+&nbsp;&nbsp;&nbsp;&nbsp;'TEN':&nbsp;[300.0,&nbsp;'PLN']
+}
+
+for&nbsp;ticker,&nbsp;info&nbsp;in&nbsp;gaming.items():
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;info[1]&nbsp;==&nbsp;'PLN':
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue
+&nbsp;&nbsp;&nbsp;&nbsp;info[0]&nbsp;=&nbsp;info[0]&nbsp;*&nbsp;4.0
+&nbsp;&nbsp;&nbsp;&nbsp;info[1]&nbsp;=&nbsp;'PLN'
+print(gaming)</pre>

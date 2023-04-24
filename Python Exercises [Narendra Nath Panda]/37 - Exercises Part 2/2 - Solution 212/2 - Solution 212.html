@@ -1,0 +1,12 @@
+<p><strong>Solution I:</strong></p><pre class="narendra">from itertools import groupby
+
+
+def compress(number):
+    result = []
+    for key, group in groupby(str(number)):
+        result.append((key, len(list(group))))
+    return result</pre><p><strong>Solution II </strong>(list comprehension)<strong>:</strong></p><pre class="narendra">from itertools import groupby
+
+
+def compress(number):
+    return [(key, len(list(group))) for key, group in groupby(str(number))]</pre>

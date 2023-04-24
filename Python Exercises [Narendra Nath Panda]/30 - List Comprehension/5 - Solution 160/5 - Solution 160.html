@@ -1,0 +1,6 @@
+<p><strong>Solution:</strong></p><pre class="narendra">with&nbsp;open('love.txt',&nbsp;'r')&nbsp;as&nbsp;file:
+&nbsp;&nbsp;&nbsp;&nbsp;lines&nbsp;=&nbsp;file.read().splitlines()
+
+lines&nbsp;=&nbsp;[line&nbsp;for&nbsp;line&nbsp;in&nbsp;lines&nbsp;if&nbsp;len(line)&nbsp;&gt;&nbsp;0]
+lines&nbsp;=&nbsp;[line.split()&nbsp;for&nbsp;line&nbsp;in&nbsp;lines]
+print(lines)</pre>

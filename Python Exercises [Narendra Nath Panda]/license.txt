@@ -1,0 +1,5 @@
+license: Freeware
+
+license by GitHub [ NARENDRA NATH PANDA ]
+
+link: https://github.com/NarendraNathPanda

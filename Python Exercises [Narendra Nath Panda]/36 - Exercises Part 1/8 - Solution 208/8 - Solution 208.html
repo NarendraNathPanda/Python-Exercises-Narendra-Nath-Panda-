@@ -1,0 +1,19 @@
+<p><strong>Solution I:</strong></p><pre class="narendra">def is_prime(n):
+    if n &lt; 2:
+        return False
+    if n % 2 == 0:
+        return n == 2
+    i = 3
+    while i * i &lt;= n:
+        if n % i == 0:
+            return False
+        i += 2
+    return True</pre><p><strong>Solution II </strong>(less efficient)<strong>:</strong></p><pre class="narendra">def is_prime(n):
+    if n &lt; 2:
+        return False
+    elif n == 2:
+        return True
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True</pre>

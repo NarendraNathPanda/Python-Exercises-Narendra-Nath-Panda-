@@ -1,0 +1,7 @@
+<p><strong>Solution:</strong></p><pre class="narendra">with&nbsp;open('narendra.csv',&nbsp;'r')&nbsp;as&nbsp;file:
+&nbsp;&nbsp;&nbsp;&nbsp;content&nbsp;=&nbsp;file.read().splitlines()
+
+volumes&nbsp;=&nbsp;[line.split(',')[-1]&nbsp;for&nbsp;line&nbsp;in&nbsp;content][1:]
+volumes&nbsp;=&nbsp;[int(vol)&nbsp;for&nbsp;vol&nbsp;in&nbsp;volumes]
+max_vol&nbsp;=&nbsp;max(volumes)
+print(f'Max&nbsp;Vol:&nbsp;{max_vol}')</pre>

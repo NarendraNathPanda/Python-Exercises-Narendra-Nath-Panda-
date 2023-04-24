@@ -1,0 +1,11 @@
+<p><strong>Solution:</strong></p><pre class="narendra">def&nbsp;detect_class(array):
+&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;[]
+
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;item&nbsp;in&nbsp;array:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max_val&nbsp;=&nbsp;max(item)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;empty&nbsp;=&nbsp;[0]&nbsp;*&nbsp;len(item)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;idx,&nbsp;val&nbsp;in&nbsp;enumerate(item):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;val&nbsp;==&nbsp;max_val:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;empty[idx]&nbsp;=&nbsp;1
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.append(empty)
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;result</pre>

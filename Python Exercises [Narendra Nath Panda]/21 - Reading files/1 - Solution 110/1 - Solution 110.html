@@ -1,0 +1,11 @@
+<p><strong>Solution:</strong></p><pre class="narendra">with&nbsp;open('narendra.txt',&nbsp;'r')&nbsp;as&nbsp;file:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lines&nbsp;=&nbsp;file.read().splitlines()
+
+close&nbsp;=&nbsp;[]
+
+for&nbsp;idx,&nbsp;line&nbsp;in&nbsp;enumerate(lines):
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;idx&nbsp;&gt;&nbsp;0:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;close.append(int(line.split(',')[-2]))
+
+close_avg&nbsp;=&nbsp;sum(close)&nbsp;/&nbsp;len(close)
+print(f'3-day&nbsp;average&nbsp;closing&nbsp;price:&nbsp;{close_avg:.2f}')</pre>
